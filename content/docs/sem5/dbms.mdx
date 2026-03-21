@@ -1,0 +1,281 @@
+---
+title: DBMS
+description: Semester 5 DBMS past questions filtered against the new ENCT 301 syllabus and organized chapter-wise.
+---
+
+
+## Chapter 1: Introduction
+
+1. **Briefly explain the three levels of data abstraction in RDBMS. What is physical data independence?**
+2. **Why do we prefer DBMS over file system for handling databases? Briefly explain.**
+3. **Define database and database management system. List advantages of DBMS over file management.**
+4. **What do you mean by Schema and Instances? Briefly explain the different level of data abstraction.**
+5. **Define database language. Compare the DBMS with file processing system.**
+6. **Define the terms Data Abstraction and Data Independence. Why they are important in DBMS?**
+7. **Explain the advantages of using Relational Database Management Systems. What are the levels of data abstraction in Database Management system?**
+8. **What do you mean by data abstraction? Describe the various levels of data abstraction in database management system.**
+9. **Describe the different levels of abstraction in database. Discuss the significance of this abstraction.**
+
+## Chapter 2: Data Models
+
+1. **Explain different types of keys in a relational database along with example.**
+2. **Explain the various elements of the relational data model along with an example.**
+3. **Explain the relational model of a database system along with foreign key constraint with appropriate example.**
+4. **Explain the distinctions among the terms primary key, candidate key and super key with suitable example.**
+5. **Explain what are super key, candidate key and primary key in tables with proper examples. Explain what is foreign key constraint along with an example.**
+6. **What do you mean by referential integrity? Explain the different possibilities for update and delete with referential integrity.**
+7. **Explain the different types of attributes. What is a discriminator key?**
+8. **Define generalization and specialization with its notation and examples.**
+9. **What is a weak entity set and identifying relationship? Explain with example.**
+
+### ER-model questions
+
+10. **Draw an ER-diagram for this case: Hospital Management System. A hospital has multiple departments such as Cardiology, Neurology, Orthopedics, etc. Each department has a unique department ID and a name. The hospital has several doctors, each identified by a doctor ID. Doctors have attributes like name, specialization, and experience. A doctor belongs to one department but may treat multiple patients. Each patient has a patient ID, name, age, gender, and medical history. Patients can be admitted to the hospital or be outpatients. Each patient is assigned a room when admitted. A room has a room number, type (ICU, General, Private), and cost per day. The hospital has a nurse staff, where each nurse is identified by an employee ID, name, and shift timings. Nurses assist doctors and take care of patients. The hospital also has a pharmacy, which stores medicines identified by a medicine ID, name, and expiry date. Patients may be prescribed medicines by doctors. The hospital maintains records of appointments, where a patient consults a doctor at a specific date and time.**
+11. **A relational database is to be designed for a medium sized Company dealing with industrial applications of computers. The Company delivers various products to its customers ranging from a single application program through to complete installation of hardware with customized software. The Company employs various experts, consultants and supporting staff. All personnel are employed on long-term basis, i.e. there is no short-term or temporary staff. Although the Company is somehow structured for administrative purposes (that is, it is divided into departments headed by department managers), all projects are carried out in an inter-disciplinary way. For each project, a project team is selected, grouping employees from different departments, and a Project Manager (also an employee of the Company) is appointed who is entirely and exclusively responsible for the control of the project, quite independently of the Company's hierarchy. Construct an ER diagram assuming the necessary attributes, relationship sets and mapping constraints.** (2)
+12. **A Home Decor company sells different furniture and has salespersons. A salesperson may manage many other salespeople. A salesperson can sell furniture for many customers. A customer is managed by only one salesperson. A customer can place many orders. An order can be placed by one customer. An order lists many furniture items. A furniture item may be listed on many orders. A furniture item is identified from its brand name. A supplier can supply furniture from many brands. Every supplier are recognized by their name address and phone number. The Decor Company makes multiple payment per month to the supplier. Construct an ER diagram assuming the necessary attributes, relationship sets and mapping constraints.**
+13. **Design a ER diagram for following requirement: The database keeps track of three types of persons: employees, alumni, and students. A person can belong to one, two, or all three of these types. Each person has a name, SSN, sex, address, and birth date. Every employee has a salary, and there are three types of employee: faculty, staff, and student assistants. Each employee belongs to exactly one of these types. For each alumnus, a record of the degree or degrees that he or she earned at the university is kept, including the name of the degree, the year granted, and the major department. Each student has a major department. Each faculty has a rank, whereas each staff member has a staff position. Student assistants are classified further as either research assistants or teaching assistants, and the percent of time that they work is recorded in the database. Research assistants have their research project stored, whereas teaching assistants have the current course they work on. Students are further classified as either graduate or undergraduate, with the specific attributes degree program (M.S., Ph.D., M.B.A., and so on) for graduate student and class (freshman, sophomore, and so on) for under-graduates.**
+14. **Draw an ER diagram for the mini-case "Procurement department of an Organization (ABC) keeps track of all the items such as Furniture and equipment in the offices. There are several buildings of the ABC and each one is given a different name to identify it. Each item is assigned a unique ID when it is purchased. This ID is used to keep track of the item, which is assigned to a room within a building. Each room within a building is assigned to a department". Document all assumptions that you make about the mapping constraints.**
+15. **Consider an ONLINE AUCTION database system in which members participate in the sale of items. The data requirements for this system are summarized as follows: The online site has members, each of whom is identified by a unique member number and is described by an e-mail address, name, password, home address and phone number. A member may be a buyer and seller. A buyer has a shipping address recorded in the database. A seller has a bank account number and routing number recorded in the database. Items are placed by a seller for sale and are identified by a unique item number assigned by the system. Items are also described by an item title, a description, starting bid price, bidding increment, the start date of the auction and the end date of the auction. Items are also categorized based on a fixed classification hierarchy. Buyers make bids for items they are interested in. Bid price and time of bid is recorded. The bidder at the end of the auction with the highest bid price is declared the winner and a transaction between buyer and seller may then proceed. The buyer and seller may record feedback regarding their completed transactions. Feedback contains a rating of the other party participating in the transaction (1-10) and a comment. Design an Entity-Relationship diagram for the ONLINE AUCTION database.**
+16. **An University Registrar's Office maintains data about the following entities: (i) Courses, including number, title, credits, syllabus and prerequisites; (ii) Course Offerings, including course number, year, semester, section number, instructors, timings, and classroom; (iii) Students, including student id, name and program; (iv) Instructors, including identification number, name department and title. Further, the enrolment of students in course and grade awarded to students in each course they are enrolled for must be appropriately modelled. Construct an E-R diagram for the Registrar's office. Document all assumptions that you make about the mapping constraints.**
+17. **Consider the database of departmental store. There are various departments in the store. One department sales many items. Some items may be sold by more than one department. A department has many employee. An employee can belong to at most one department. A manager is an employee who may look after more than one department but a department may be look after by only one manager. A unique number called internal_item_no. is assigned to every item by store. A supplier may supply more than one item. Every item is supplied by only one supplier at a time. Consider the necessary attributes and keys of entity and construct ER diagram.**
+
+## Chapter 3: Relational Query Languages
+
+1. **Consider the following relational database model for a University:**
+   - `Student (sid, name, age, major, dept_id)`
+   - `Course (cid, title, credits, dept_id)`
+   - `Enrollment (sid, cid, semester, year, grade)`
+   - `Department (dept_id, dept_name, hod_id)`
+   - `Professor (pid, name, salary, dept_id)`
+   - `Teaches (pid, cid, semester, year)`
+   - Write relational algebra expressions for:
+     - Find the `sid` and `name` of all students who have enrolled in a course titled "Database Systems".
+     - List the `cid` and `title` of all courses that offer more than 4 credits and belong to the "Computer Science" department.
+     - Increase the salary of all professors in the "Mathematics" department by 15%.
+2. **Consider the following schema:**
+   - `Person (driver_id, name, address)`
+   - `Accident (report_no, date, location)`
+   - `Owns (driver_id, car)`
+   - `Participated (driver_id, car, report_no, damage_amount)`
+   - Write SQL queries for:
+     - Find the names and addresses of drivers who own a car and have been in an accident.
+     - Find the total damage cost for each accident report.
+     - Find accidents where the total damage cost exceeded Rs 50,000.
+     - Find all cars that were involved in accidents and the names of their owners.
+3. **Consider the following Library database:**
+   - `Book (BID, Title, Author, Genre, Publisher, Year)`
+   - `Member (MID, Name, Email, Phone, Address)`
+   - `IssuedBook (LibID, MID, BID, IssueDate, ReturnDate)`
+   - `Librarian (LibID, Name, Email, Phone, Salary)`
+   - `Manages (LibID, BID)`
+   - Write relational algebra expressions for:
+     - Find the book title, author name, and publication year where the genre is Novel.
+     - Delete all the information of members who are from Kathmandu City.
+     - Find the book title and librarian name who had managed the books published by Pearson.
+4. **Consider the same database in question 4. Write SQL expressions for:**
+   - Display the member names who issued a book on January 20, 2025.
+   - Display the name of the librarian who issued a book title starting with `D` using a subquery.
+   - Update salaries of all librarians by 10% for those whose salary is less than 50,000 and by 5% for the rest.
+   - Create a view named `BOOKMANAGER` containing Book ID, Book Title, Librarian ID, and Librarian Name where the book publication year is from 1990 to 2010 and the publisher is `Wiley`.
+5. **What are the advantages of using database views in a DBMS? Give one example of view with SQL script.**
+6. **Define database. Explain DDL, DML and DCL with examples.**
+7. **Consider the following relational database:**
+   - `lives (person-name, street, city)`
+   - `works (person-name, company-name, salary)`
+   - `located-in (company-name, city)`
+   - `manages (person-name, manager-name)`
+   - Write relational algebra expressions for:
+     - Find the name of persons working at "City Bank" who earn more than $50,000.
+     - Find the names of all persons who live in the same city as the company they work for.
+     - Increase the salary of all persons working for "City Bank" by 5%.
+8. **Consider the following relational schema:**
+   - `Employee (empid, ename, address, title, headid)`
+   - `Project (pid, pname, budget, location)`
+   - `Work (empid, pid, responsibility, duration)`
+   - `Payment (title, salary)`
+   - Write SQL for:
+     - Creating the above relational schemas.
+     - Counting the number of projects with duration more than 2 years.
+     - Finding the names of employees working in the "ICT" project and earning more than 20K.
+     - Updating the salary of employees by 15% if salary is less than 50K, by 10% if salary is between 50K and 100K, and by 5% if salary is greater than 100K.
+9. **Consider the following insurance database:**
+   - `PERSON (licenseNo, name, address)`
+   - `CAR (modelNo, brand, year)`
+   - `ACCIDENT (reportNo, date, location)`
+   - `OWNS (licenseNo, modelNo)`
+   - `PARTICIPATED (licenseNo, reportNo, damageAmount)`
+   - Write relational algebra expressions for:
+     - Find all persons who have a license and live in Lalitpur.
+     - Find the total number of accidents that occurred location-wise on December 10, 2022.
+     - Find the person name, date, and location of the accident where the damage amount exceeds 50,000.
+     - Find the name of the person and brand name of a car manufactured in 2020.
+   - Write SQL expressions for:
+     - Display the name and address of a person whose name ends with `ta` and is involved in an accident.
+     - Display the license numbers and location where the accident took place on January 20, 2020.
+     - Update the brand name `BMW` to `BMW-X` for cars manufactured in 2020.
+     - Create a view named `PERSON_REPORT` containing License No, Name, and Report No where the damage amount is less than or equal to 100000.
+10. **Consider the following relational database:**
+   - `Doctor (name, age, address)`
+   - `Works (name, dept_no)`
+   - `Department (dept_no, floor, room)`
+   - Write SQL for:
+     - Displaying the records of doctors with their department information.
+     - Finding the total number of rooms assigned on each floor.
+     - Displaying the name of the doctor with maximum age.
+     - Deleting the records of doctors whose name starts with `M` and who work on the 10th floor.
+11. **Consider the following relational database:**
+   - `Client (Cid, Lid, Cname, birthYear, caseField)`
+   - `Lawyer (Lid, Fname, Lname, Speciality, Salary, startingYear)`
+   - `Firm (Fname, City, managerName)`
+   - Write relational algebra expressions for:
+     - Finding the names of clients born after 1980 whose case field was "Traffic".
+     - Finding the names of clients who were represented only by lawyers whose salary is 8000.
+     - Finding all pairs of client ID and firm name such that no lawyer of that law firm represented the client and the client had some case in a field other than "Divorce".
+12. **Consider the following relational database:**
+   - `Worker (worker_id, first_name, last_name, salary, joining_date, department)`
+   - `Bonus (worker_id, bonus_amount, bonus_date)`
+   - `Title (worker_id, worker_title, affected_from)`
+   - Write SQL expressions to:
+     - Fetch unique values of department from the `Worker` table.
+     - Print details of workers with department name `Admin`.
+     - Print details of workers who are also managers.
+     - Show the second highest salary from the table.
+13. **Consider the following relational model:**
+   - `passenger (pid, pname, pgender, pcity)`
+   - `agency (aid, aname, acity)`
+   - `flight (fid, fdate, time, src, dest)`
+   - `booking (pid, aid, fid, fdate)`
+   - Write relational algebra expressions to:
+     - Get the details about all flights from Kathmandu to Biratnagar.
+     - Find only the flight numbers for passenger with `pid` 123 for flights to Kathmandu before `06/11/2020`.
+14. **Consider the following relational database model:**
+   - `Hotel (Hotel_No, Name, Address)`
+   - `Room (Room_No, Hotel_No, Type, Price)`
+   - `Booking (Hotel_No, Guest_No, Date_From, Date_To, Room_No)`
+   - `Guest (Guest_No, Name, Address)`
+   - Write SQL statements for:
+     - Listing all guests who have booked rooms at the Everest Hotel.
+     - Creating a view to expose only `Hotel_No`, `Guest_No`, `Room_No`, and room price for all booked rooms.
+     - Finding the total cost of all deluxe rooms of Everest Hotel after offering a 5% discount.
+     - Identifying the hotel name that has the highest total guests.
+15. **For the relational database model given in Question No. 3, write relational algebra expressions for:**
+   - Listing the names of hotels in Kathmandu.
+   - Listing the names of hotels and all available room types with price.
+   - Listing all guest names who have booked a deluxe room at the Everest Hotel.
+   - Listing the total number of rooms booked, type-wise, at the Everest Hotel.
+16. **Consider the following relational database model:**
+   - `account (account-number, branch-name, balance)`
+   - `loan (loan-number, branch-name, amount)`
+   - `customer (customer-name, customer-street, customer-city)`
+   - `depositor (customer_name, account_number)`
+   - `borrower (customer_name, loan_number)`
+   - `branch (branch-name, branch-city, assets)`
+   - Write relational algebra expressions for:
+     - Finding the names and street addresses of all customers who have an account at the "Thapathali" branch.
+     - Finding the names of all customers who have an account with balance more than 10,00,000.
+     - Deleting all loan records with amount in the range of 0 to 500.
+     - Showing the number of accounts in each branch along with the branch name.
+17. **Consider the following relational schema:**
+   - `Product (pid, name, price, category, maker-cid)`
+   - `Purchase (buyer-ssn, seller-ssn, quantity, pid)`
+   - `Company (cid, name, stock price, country)`
+   - `Person (ssn, name, phone number, city)`
+   - Write SQL for:
+     - Finding the names of all products made in "China" with price less than 10,000.
+     - Creating a view to expose product name and total quantity sold from all transactions.
+     - Increasing the price of all products in the "Laptop" category by 5%.
+     - Creating the `Product` table with appropriate data types and proper primary and foreign key definitions.
+
+### Repeated questions in Chapter 3
+
+18. **Display the license numbers and location where the accident took place on Jan 20, 2020.** (2)
+19. **Update the brand name "BMW" to "BMW-X" for car manufactured in year 2020.** (2)
+20. **Create a view named PERSON_REPORT which contains license No, Name and report No as its members where the damage amount is less than or equal to 100000.** (2)
+
+## Chapter 4: Database Constraints and Normalization
+
+1. **Define integrity constraints in DBMS. Give examples of domain constraints with its SQL syntax.**
+2. **How do you compute an attribute Closure? Explain with a suitable example.** (2)
+3. **Define 3NF along with a suitable example schema. Compare 3NF with BCNF.**
+4. **What is database normalization and why is it needed? Explain 1NF, 2NF, 3NF and BCNF along with examples.**
+5. **Consider a relation schema R(A, B, C, D) with the following functional dependencies- A->B, B->C, D->B. Determine whether the decomposition of R into R1(A, B), R2(B, C) and R3(B, D) is lossless or lossy.**
+6. **What is functional dependency in DBMS? Explain 1NF and 2NF with examples.**
+7. **What is the purpose of Normalization? Compare 3NF and BCNF along with definitions.**
+8. **Define an extraneous attribute in a Functional dependency. Given a relation R = \{A, B, C, D\} and corresponding FDs: F = \{A->BC, B->D, A->B, AB->C\}. Find attribute closure \{A\}+, \{BC\}+. Which of these attribute deserve the property of candidate key? Justify it.**
+9. **Define a partial and transitive functional dependency with example. How do you achieve a relation in a BCNF? Describe the algorithm.**
+10. **Suppose that we decompose the schema R = (A, B, C) into R1 = (A, B), R2 = (A, C). Show that this decomposition is a lossless join decomposition and not dependency preserving if the F = \{A->B, B->C\}**
+11. **Briefly explain 1NF, 2NF, 3NF and BCNF with suitable illustrations.**
+12. **What are the various problems without normalization? Explain.**
+13. **Define partial and transitive dependency with example. Given a relation R(A, B, C, D) and Functional Dependency set FD = \{AB->CD, B->C\}, determine whether the given R is in 2NF? If not convert it into 2 NF.**
+14. **What is Normalization? Why is it important? Differentiate between 3NF and BCNF with suitable examples.**
+15. **Describe what is 2NF and 3NF. Formally define BCNF.**
+
+## Chapter 5: Query Processing and Optimization
+
+1. **What are the steps in query processing? Explain briefly. List out any 3 equivalence rules for relational algebra for query optimization.**
+2. **List out and describe the main steps involved in query processing in an RDBMS. Compare cost-based optimization and heuristic optimization.**
+3. **Describe the role of translator and optimizer in query processing. Explain Cost based optimization and Heuristic optimization technique.**
+4. **Explain the working of triggers along with its syntax and an example.**
+5. **Describe the entire query processing events to retrieve data from database provided a SQL query. Explain the strategies that can be used for query evaluation along with examples.**
+6. **Explain the basic steps in query processing with a diagram. What is pipelining evaluation in a query? Explain with an example.**
+7. **Explain the process how query is evaluated in RDBMS system. How are equivalence rules for relation algebra helpful for query optimization? Explain with example.**
+8. **Define query processing and briefly explain its steps. How is pipeline approach different from the materialization approach?**
+9. **What are functions of the parser and optimizer in query processing? Compare nested loop join and block nested loop join with reference to its algorithm and cost analysis.**
+10. **Explain the process of query optimization. What is heuristic optimization?**
+
+## Chapter 6: File Structure and Hashing
+
+1. **Explain fixed-length and variable-length records in File Organization. Explain how a hash index works. Distinguish between static and dynamic hashing.**
+2. **What is a variable length record? How does a Slotted Page Structure manage variable length records?**
+3. **How does dynamic hashing work? Explain briefly.**
+4. **What is an index sequential file? Differentiate between dense index and sparse index.**
+5. **What do you mean by ordered index and hash index? Explain limitation of static hashing. How extendable hashing overcome such limitation?**
+6. **Distinguish between primary and secondary index? Perform the insertion operation in B+ tree for the following sequence:- 1, 3, 5, 7, 9, 2, 4, 6, 8, 10**
+7. **What is the difference between primary index and secondary index? Briefly explain what is hash index.**
+
+## Chapter 7: Transaction Processing and Concurrency Control
+
+1. **Determine whether the following schedule S is serializable or not. Justify your answer.**
+2. **Explain the two types of locks: shared locks and exclusive locks used for concurrency control. Explain their compatibility.**
+3. **Let a schedule S be R1(X) W1(X); W2(X); R3(Y) W3(Y) W3(X); R1(Y) conclude whether the given schedule is conflict serializable or not.**
+4. **Explain the pitfalls of Lock based Protocols. Show an example of a deadlock.**
+5. **Explain ACID properties in database transaction with examples. Explain how wait-die scheme and wound-wait scheme helps to prevent deadlock.**
+6. **What is a transaction? What are the ideal properties of a transaction?**
+7. **Describe strict two-phase locking protocol (2PL).**
+8. **What are possible transaction states? Briefly explain any two dead lock handling mechanism with suitable examples.**
+9. **Define transaction and its properties. Explain the two-phase locking protocol for concurrency control in DBMS.**
+10. **Consider a schedule S: r1(y); r3(z); w1(y); w2(z); r3(y); w2(y). State whether it is conflict serializable schedule or not. Determine the equivalent serial schedule if it is serializable.**
+11. **Define transaction and transaction processing system. What are the situations that occur if the proper isolation is not maintain in transaction? Explain with example.**
+12. **Since every conflict-serializable schedule is view serializable, why do we emphasize conflict serializability rather than view serializability? Consider the precedence graph given below. Is the corresponding schedule conflict serializable? Explain your answer.**
+13. **Explain the ACID properties of transactions. Explain the states of a transaction along with a state-transition diagram.**
+14. **Briefly explain ACID properties of a transaction. How two-phase locking protocol does ensures conflict-serializable schedule?**
+
+## Chapter 8: Crash Recovery
+
+1. **What is a stable storage? What are checkpoints in Log based recovery Mechanism? How data are recovered using checkpoints?**
+2. **What are logs in DBMS? How do you recover from a crash using log-based recovery? Explain briefly.**
+3. **How does log based recovery method work? Explain the conditions of using redo and undo operations during the recovery process.**
+4. **Define stable storage. Explain log-based recovery technique with example.**
+5. **Consider the following log contents when a crash occurs. Explain how recovery would be done for each state in log based recovery.**
+6. **Explain the various causes of failure in system. Explain remote back up system.**
+7. **Write the different types of failures that may occur in DBMS. Differentiate between shadow paging and log-based recovery.**
+8. **Explain the need of recovery techniques. Compare the shadow-paging recovery scheme with the log-based recovery schemes in terms of ease of implementation and overhead cost.**
+9. **What does the check point recovery take place in case of transaction failure? Briefly discuss on the shadow paging technique for recovery.**
+10. **What is a stable storage? Briefly explain how log-based recovery works.**
+
+## Chapter 9: Advanced Database Concepts
+
+1. **Write short notes on the following.** *(Repeated twice.)*
+   - Distributed databases
+   - Data warehouses
+2. **Write short notes on:**
+   - Data warehouse database and its application
+3. **Write short notes on:**
+   - Data warehouse and its components
+   - Distributed database
+4. **Write short notes on:**
+   - Features of object-oriented database
+5. **Write short notes on:**
+   - Importance of data warehouses
+
+> The new syllabus also includes **stored procedures, GRANT/REVOKE, converting ER to relational model, OLAP, NoSQL, and big data**, but these topics are not present in the old question papers.

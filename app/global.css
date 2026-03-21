@@ -1,0 +1,95 @@
+@import 'tailwindcss';
+@import 'fumadocs-ui/css/neutral.css';
+@import 'fumadocs-ui/css/preset.css';
+
+:root {
+  --color-fd-background: hsl(44 38% 97%);
+  --color-fd-card: hsl(42 34% 95%);
+  --color-fd-popover: hsl(46 40% 98%);
+  --color-fd-border: hsla(42, 48%, 42%, 0.18);
+  --color-fd-primary: hsl(41 84% 40%);
+  --color-fd-primary-foreground: hsl(48 100% 97%);
+  --color-fd-secondary: hsl(45 52% 91%);
+  --color-fd-secondary-foreground: hsl(35 52% 20%);
+  --color-fd-accent: hsl(45 60% 88%);
+  --color-fd-accent-foreground: hsl(35 56% 20%);
+  --color-fd-ring: hsl(41 84% 40%);
+}
+
+.dark {
+  --color-fd-background: hsl(40 18% 8%);
+  --color-fd-card: hsl(40 18% 10%);
+  --color-fd-popover: hsl(40 18% 9%);
+  --color-fd-border: hsla(48, 58%, 68%, 0.16);
+  --color-fd-primary: hsl(51 100% 74%);
+  --color-fd-primary-foreground: hsl(42 48% 10%);
+  --color-fd-secondary: hsl(40 16% 14%);
+  --color-fd-secondary-foreground: hsl(50 72% 84%);
+  --color-fd-accent: hsl(40 16% 18%);
+  --color-fd-accent-foreground: hsl(50 72% 88%);
+  --color-fd-ring: hsl(51 100% 74%);
+}
+
+#nd-sidebar {
+  background-color: color-mix(in oklab, var(--color-fd-background) 92%, var(--color-fd-primary) 8%);
+}
+
+.dark #nd-sidebar {
+  background-color: color-mix(in oklab, var(--color-fd-background) 94%, var(--color-fd-primary) 6%);
+}
+
+.question-bank {
+  --tw-prose-body: color-mix(
+    in oklab,
+    var(--color-fd-foreground) 82%,
+    var(--color-fd-muted-foreground)
+  );
+  --tw-prose-headings: color-mix(
+    in oklab,
+    var(--color-fd-foreground) 92%,
+    var(--color-fd-primary) 8%
+  );
+  --tw-prose-bold: color-mix(
+    in oklab,
+    var(--color-fd-foreground) 84%,
+    var(--color-fd-muted-foreground)
+  );
+  --tw-prose-counters: color-mix(
+    in oklab,
+    var(--color-fd-primary) 45%,
+    var(--color-fd-muted-foreground)
+  );
+  --tw-prose-bullets: color-mix(
+    in oklab,
+    var(--color-fd-primary) 50%,
+    var(--color-fd-muted-foreground)
+  );
+}
+
+.question-bank :where(ol > li, ul > li):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+}
+
+.question-bank :where(li > ul, li > ol):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+  margin-top: 0.6em;
+  margin-bottom: 0.7em;
+}
+
+.question-bank :where(strong):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+  color: color-mix(in oklab, var(--color-fd-foreground) 82%, var(--color-fd-muted-foreground));
+  font-weight: 550;
+}
+
+.question-bank :where(code):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+  background-color: color-mix(in oklab, var(--color-fd-primary) 8%, var(--color-fd-card));
+  border-color: color-mix(in oklab, var(--color-fd-primary) 18%, var(--color-fd-border));
+}
+
+.question-bank :where(h2, h3, h4):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+  color: color-mix(in oklab, var(--color-fd-foreground) 88%, var(--color-fd-primary) 12%);
+}
+
+.question-bank :where(h3, h4):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+  color: color-mix(in oklab, var(--color-fd-foreground) 80%, var(--color-fd-primary) 20%);
+}
