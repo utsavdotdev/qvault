@@ -7,15 +7,14 @@ export default function HomePage() {
         <section className="overflow-hidden rounded-3xl border border-fd-border bg-gradient-to-br from-fd-card via-fd-background to-fd-card p-8 shadow-sm sm:p-10">
           <div className="max-w-3xl">
             <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-fd-muted-foreground">
-              Engineering Question Bank
+              Past Question Bank
             </p>
             <h1 className="text-4xl font-semibold tracking-tight text-fd-foreground sm:text-5xl">
               QVault
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-7 text-fd-muted-foreground sm:text-lg">
-              A lightweight documentation hub for engineering past questions,
-              organized semester-wise, subject-wise, and chapter-wise so exam
-              revision feels focused instead of scattered.
+              Engineering past questions organized by semester, subject, and
+              chapter for faster revision.
             </p>
             <div className="mt-8 flex">
               <Link

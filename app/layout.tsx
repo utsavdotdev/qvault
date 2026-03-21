@@ -12,8 +12,7 @@ export const metadata: Metadata = {
     default: 'QVault',
     template: '%s | QVault',
   },
-  description:
-    'Semester-wise, subject-wise, and chapter-wise engineering past questions for faster exam preparation.',
+  description: 'Engineering past questions organized for quick revision.',
 };
 
 export default function Layout({ children }: LayoutProps<'/'>) {
