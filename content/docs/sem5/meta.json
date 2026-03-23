@@ -2,5 +2,5 @@
   "title": "Semester 5",
   "root": true,
   "defaultOpen": true,
-  "pages": ["dbms", "coa"]
+  "pages": ["dbms", "coa", "wap", "cn"]
 }
