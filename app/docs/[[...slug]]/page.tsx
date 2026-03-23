@@ -17,7 +17,7 @@ export default async function Page(props: PageProps<"/docs/[[...slug]]">) {
   const params = await props.params;
   const page = source.getPage(params.slug);
   if (!page) notFound();
-  const isQuestionBank = params.slug?.join("/") === "sem5/dbms";
+  const isQuestionBank = params.slug?.[0] === "sem5";
 
   const MDX = page.data.body;
 
